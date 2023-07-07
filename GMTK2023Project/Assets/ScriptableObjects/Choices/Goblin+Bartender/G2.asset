@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
+  m_Name: G2
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  choice1Anim: {fileID: 0}
+  choice1Next: {fileID: 0}
+  choice1Name: Leave
+  choice1Sentence: Grrr, fine! It's not like you would have had a lot of gold anyway!
+  choice2Anim: {fileID: 0}
+  choice2Next: {fileID: 0}
+  choice2Name: Refuse and Fight Back
+  choice2Sentence: Not until you give me all your gold! Don't make me do anything
+    you'll regret.

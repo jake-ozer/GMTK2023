@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
+  m_Name: GBTInitial
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  choice1Anim: {fileID: 0}
+  choice1Next: {fileID: 11400000, guid: e186df7346d890741be1aae51e2b19e1, type: 2}
+  choice1Name: Offer Drink
+  choice1Sentence: Hello, sir. Would you like a drink?
+  choice2Anim: {fileID: 0}
+  choice2Next: {fileID: 0}
+  choice2Name: Kick Out
+  choice2Sentence: Get the heck out of my tavern, you little punk!
