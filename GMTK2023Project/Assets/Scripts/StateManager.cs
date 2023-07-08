@@ -44,6 +44,8 @@ public class StateManager : MonoBehaviour
 
     public void SwitchCharacters()
     {
+        dialogueCam.Priority = 1;
+        playerCam.Priority = 1;
         curPlayer = curPlayer.GetComponent<PlayerCharacter>().partner.gameObject;
     }
 }

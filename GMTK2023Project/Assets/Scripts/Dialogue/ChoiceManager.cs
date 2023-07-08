@@ -9,6 +9,7 @@ public class ChoiceManager : MonoBehaviour
     [SerializeField] private Choice startingChoice;
     [SerializeField] private GameObject choiceMenu;
     [SerializeField] private float timeTillNextChoice = 2f;
+    [SerializeField] private float timeTillChoicesAppearAfterSwitch = 2f;
     public Choice currentChoice;
     public bool makingChoice = false;
     private bool choice1Pointer;
@@ -57,18 +58,42 @@ public class ChoiceManager : MonoBehaviour
 
     public IEnumerator NextChoice()
     {
-        Debug.Log("NEXT CHOICE WAS CALLED");
         yield return new WaitForSeconds(timeTillNextChoice);
 
         if (choice1Pointer)
         {
-            currentChoice = currentChoice.choice1Next;
+            if (currentChoice.choice1Next != null)
+            {
+                currentChoice = currentChoice.choice1Next;
+                FindObjectOfType<StateManager>().SwitchCharacters();
+                yield return new WaitForSeconds(timeTillChoicesAppearAfterSwitch);
+                makingChoice = true;
+            }
+            else
+            {
+                EndEncounter();
+            }
         }
         else
         {
-            currentChoice = currentChoice.choice2Next;
+            if (currentChoice.choice2Next != null)
+            {
+                currentChoice = currentChoice.choice2Next;
+                FindObjectOfType<StateManager>().SwitchCharacters();
+                yield return new WaitForSeconds(timeTillChoicesAppearAfterSwitch);
+                makingChoice = true;
+            }
+            else
+            {
+                EndEncounter();
+            }
         }
+    }
 
-        FindObjectOfType<StateManager>().SwitchCharacters();
+    private void EndEncounter()
+    {
+        Debug.Log("Encounter over");
+        makingChoice = false;
+        FindObjectOfType<StateManager>().currentState = StateManager.State.freeRoam;
     }
 }

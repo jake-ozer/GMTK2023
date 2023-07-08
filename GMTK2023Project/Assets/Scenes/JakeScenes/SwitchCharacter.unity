@@ -900,7 +900,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingChoice: {fileID: 11400000, guid: 29479bb79cd980649920323b6308c478, type: 2}
   choiceMenu: {fileID: 547668384}
-  timeTillNextChoice: 1.5
+  timeTillNextChoice: 0.5
+  timeTillChoicesAppearAfterSwitch: 2
   currentChoice: {fileID: 11400000, guid: 29479bb79cd980649920323b6308c478, type: 2}
   makingChoice: 0
 --- !u!4 &936419680

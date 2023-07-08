@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
+  m_Name: Goblin offered drink
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  choice1Anim: {fileID: 0}
+  choice1Next: {fileID: 0}
+  choice1Name: Accept Drink
+  choice1Sentence: ...Sure! No one has ever been so nice to me before.
+  choice2Anim: {fileID: 0}
+  choice2Next: {fileID: 0}
+  choice2Name: Reject Drink and Rob Him
+  choice2Sentence: I don't want your digusting swill, you buffoon! I want your gold!
+    Hand it over!

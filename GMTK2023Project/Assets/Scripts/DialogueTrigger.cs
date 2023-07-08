@@ -10,6 +10,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             FindObjectOfType<StateManager>().currentState = StateManager.State.inDialogue;
             FindObjectOfType<ChoiceManager>().makingChoice = true;
+            this.gameObject.SetActive(false);
         }
     }
 }

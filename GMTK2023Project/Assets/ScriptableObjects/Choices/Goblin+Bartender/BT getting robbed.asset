@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
-  m_Name: G1
+  m_Name: BT getting robbed
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   choice1Anim: {fileID: 0}
   choice1Next: {fileID: 0}
-  choice1Name: Accept Drink
-  choice1Sentence: ...Sure! No one has ever been so nice to me before.
+  choice1Name: 
+  choice1Sentence: 
   choice2Anim: {fileID: 0}
   choice2Next: {fileID: 0}
-  choice2Name: Reject Drink and Rob Him
-  choice2Sentence: I don't want your digusting swill, you buffoon! I want your gold!
-    Hand it over!
+  choice2Name: 
+  choice2Sentence: 
