@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
   m_Name: Goblin told to leave
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
+  choice1Name: Leave
   choice1Anim: {fileID: 0}
   choice1Next: {fileID: 0}
-  choice1Name: Leave
   choice1Sentence: Grrr, fine! It's not like you would have had a lot of gold anyway!
-  choice2Anim: {fileID: 0}
-  choice2Next: {fileID: 0}
   choice2Name: Refuse and Fight Back
+  choice2Anim: {fileID: 0}
+  choice2Next: {fileID: 11400000, guid: a06f9d185467a364887936ca70c04a03, type: 2}
   choice2Sentence: Not until you give me all your gold! Don't make me do anything
     you'll regret.

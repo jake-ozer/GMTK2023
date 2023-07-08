@@ -72,6 +72,7 @@ public class ChoiceManager : MonoBehaviour
             else
             {
                 EndEncounter();
+                FindObjectOfType<LevelManager>().EndLevel();
             }
         }
         else
@@ -86,6 +87,7 @@ public class ChoiceManager : MonoBehaviour
             else
             {
                 EndEncounter();
+                FindObjectOfType<LevelManager>().EndLevel();
             }
         }
     }

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
   m_Name: BT getting threatened
   m_EditorClassIdentifier: 
-  choice1Name: 
+  choice1Name: Punch
   choice1Anim: {fileID: 0}
   choice1Next: {fileID: 0}
-  choice1Sentence: 
-  choice2Name: 
+  choice1Sentence: '*punch* Take that!'
+  choice2Name: Give In to His Demands
   choice2Anim: {fileID: 0}
   choice2Next: {fileID: 0}
-  choice2Sentence: 
+  choice2Sentence: Fine! Don't spend it all in one place.

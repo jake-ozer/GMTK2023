@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
   m_Name: BT getting robbed
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
+  choice1Name: Give In To His Demands
   choice1Anim: {fileID: 0}
   choice1Next: {fileID: 0}
-  choice1Name: 
-  choice1Sentence: 
+  choice1Sentence: AHH! Please don't hurt me! Take whatever you want!
+  choice2Name: Refuse
   choice2Anim: {fileID: 0}
-  choice2Next: {fileID: 0}
-  choice2Name: 
-  choice2Sentence: 
+  choice2Next: {fileID: 11400000, guid: 8f73d831117620446baf5e6fc985475b, type: 2}
+  choice2Sentence: I'm not giving you anything! Get out now.

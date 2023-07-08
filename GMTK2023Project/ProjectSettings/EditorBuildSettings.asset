@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/JakeScenes/SceneTransition.unity
+    guid: c5978cbd92a92624bb938d97986704be
   m_configObjects: {}
