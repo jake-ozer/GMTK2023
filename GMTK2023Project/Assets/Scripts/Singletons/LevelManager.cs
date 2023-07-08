@@ -26,10 +26,16 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         transitionAnim = GameObject.Find("SceneTransition").GetComponent<Animator>();
     }
+
 
     public void EndLevel()
     {

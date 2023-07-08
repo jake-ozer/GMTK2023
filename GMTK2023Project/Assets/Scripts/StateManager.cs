@@ -8,12 +8,14 @@ public class StateManager : MonoBehaviour
     public enum State {freeRoam, inDialogue}
     public State currentState;
     [SerializeField] public GameObject curPlayer;
+    private GameObject crosshair;
     private CinemachineVirtualCamera playerCam;
     private CinemachineVirtualCamera dialogueCam;
 
     private void Start()
     {
         currentState = State.freeRoam;
+        crosshair = GameObject.Find("Crosshair");
     }
 
     private void Update()
@@ -30,6 +32,7 @@ public class StateManager : MonoBehaviour
             playerCam.Priority = 0;
             dialogueCam.Priority = 5;
             Cursor.visible = true;
+            crosshair.SetActive(false);
         }
         else
         {
@@ -39,6 +42,7 @@ public class StateManager : MonoBehaviour
             playerCam.Priority = 5;
             dialogueCam.Priority = 0;
             Cursor.visible = false;
+            crosshair.SetActive(true);
         }
     }
 
