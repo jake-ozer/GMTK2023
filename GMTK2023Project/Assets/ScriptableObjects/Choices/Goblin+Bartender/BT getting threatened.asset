@@ -16,7 +16,7 @@ MonoBehaviour:
   choice1Anim: {fileID: 0}
   choice1Next: {fileID: 0}
   choice1Sentence: '*punch* Take that!'
-  choice2Name: Give In to His Demands
+  choice2Name: Give In
   choice2Anim: {fileID: 0}
   choice2Next: {fileID: 0}
   choice2Sentence: Fine! Don't spend it all in one place.

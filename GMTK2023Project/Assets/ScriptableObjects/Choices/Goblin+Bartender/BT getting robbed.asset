@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
   m_Name: BT getting robbed
   m_EditorClassIdentifier: 
-  choice1Name: Give In To His Demands
+  choice1Name: Give In
   choice1Anim: {fileID: 0}
   choice1Next: {fileID: 0}
   choice1Sentence: AHH! Please don't hurt me! Take whatever you want!

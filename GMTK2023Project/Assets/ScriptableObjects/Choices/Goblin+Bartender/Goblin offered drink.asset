@@ -16,7 +16,7 @@ MonoBehaviour:
   choice1Anim: {fileID: 0}
   choice1Next: {fileID: 0}
   choice1Sentence: ...Sure! No one has ever been so nice to me before.
-  choice2Name: Reject Drink and Rob Him
+  choice2Name: Rob Him
   choice2Anim: {fileID: 0}
   choice2Next: {fileID: 11400000, guid: 5ca716132102ce045ac1892290d7d137, type: 2}
   choice2Sentence: I don't want your digusting swill, you buffoon! I want your gold!
