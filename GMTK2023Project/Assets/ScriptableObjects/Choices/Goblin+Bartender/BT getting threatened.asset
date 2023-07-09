@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: BT getting threatened
   m_EditorClassIdentifier: 
   choice1Name: Punch
-  choice1Anim: {fileID: 0}
+  choice1AnimName: gobangry
   choice1Next: {fileID: 0}
   choice1Sentence: '*punch* Take that!'
+  choice1AVal: kickout
   choice2Name: Give In
-  choice2Anim: {fileID: 0}
+  choice2AnimName: 
   choice2Next: {fileID: 0}
   choice2Sentence: Fine! Don't spend it all in one place.
+  choice2AVal: rob
+  frog: 0

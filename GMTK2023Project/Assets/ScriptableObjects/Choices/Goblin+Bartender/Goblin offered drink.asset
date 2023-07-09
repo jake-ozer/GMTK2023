@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: Goblin offered drink
   m_EditorClassIdentifier: 
   choice1Name: Accept Drink
-  choice1Anim: {fileID: 0}
+  choice1AnimName: 
   choice1Next: {fileID: 0}
   choice1Sentence: ...Sure! No one has ever been so nice to me before.
+  choice1AVal: saint
   choice2Name: Rob Him
-  choice2Anim: {fileID: 0}
+  choice2AnimName: 
   choice2Next: {fileID: 11400000, guid: 5ca716132102ce045ac1892290d7d137, type: 2}
   choice2Sentence: I don't want your digusting swill, you buffoon! I want your gold!
     Hand it over!
+  choice2AVal: 
+  frog: 0

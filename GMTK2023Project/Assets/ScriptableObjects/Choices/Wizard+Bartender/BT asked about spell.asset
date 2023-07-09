@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
+  m_Name: BT asked about spell
+  m_EditorClassIdentifier: 
+  choice1Name: Sure
+  choice1AnimName: 
+  choice1Next: {fileID: 11400000, guid: 48c9d640283170a4bb33544dfd182087, type: 2}
+  choice1Sentence: Sure! Go ahead.
+  choice2Name: No
+  choice2AnimName: 
+  choice2Next: {fileID: 11400000, guid: 54bd272d09fed734b9ac201726784e0f, type: 2}
+  choice2Sentence: Not in my tavern. Take your magic elsewhere.
+  frog: 0

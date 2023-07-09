@@ -9,10 +9,23 @@ public class ChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public bool isChoice1;
     public AudioClip buttonSound;
     private Animator anim;
+    public bool playButton = false;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+
+        if (playButton)
+        {
+            Button b = GetComponent<Button>();
+            b.onClick.AddListener(this.GetNextScene);
+        }
+    }
+
+    private void GetNextScene()
+    {
+        Debug.Log("dheddsfjsdf");
+        FindObjectOfType<LevelManager>().NextLevel();
     }
 
     public void ButtonClick()

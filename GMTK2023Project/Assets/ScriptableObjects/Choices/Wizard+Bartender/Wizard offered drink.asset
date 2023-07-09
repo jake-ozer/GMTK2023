@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
+  m_Name: Wizard offered drink
+  m_EditorClassIdentifier: 
+  choice1Name: Ask to Cast a Spell
+  choice1AnimName: 
+  choice1Next: {fileID: 11400000, guid: 7f35ca79b3a7e8a4991f2403f3ab45ff, type: 2}
+  choice1Sentence: I'm here on research, not to drink! Could I test a spell?
+  choice2Name: Insult
+  choice2AnimName: 
+  choice2Next: {fileID: 11400000, guid: b68230f28bf03274d88b8ec50c27e240, type: 2}
+  choice2Sentence: Ha! This place is such a dump!
+  frog: 0

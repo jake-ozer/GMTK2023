@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: BT getting robbed
   m_EditorClassIdentifier: 
   choice1Name: Give In
-  choice1Anim: {fileID: 0}
+  choice1AnimName: 
   choice1Next: {fileID: 0}
   choice1Sentence: AHH! Please don't hurt me! Take whatever you want!
+  choice1AVal: rob
   choice2Name: Refuse
-  choice2Anim: {fileID: 0}
+  choice2AnimName: 
   choice2Next: {fileID: 11400000, guid: 8f73d831117620446baf5e6fc985475b, type: 2}
   choice2Sentence: I'm not giving you anything! Get out now.
+  choice2AVal: 
+  frog: 0

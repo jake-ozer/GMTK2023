@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
+  m_Name: (INIT) BT offer A drink
+  m_EditorClassIdentifier: 
+  choice1Name: Offer Drink
+  choice1AnimName: 
+  choice1Next: {fileID: 11400000, guid: 0fc8848996929eb46a095644123de36a, type: 2}
+  choice1Sentence: Here for a drink Ma'am?
+  choice2Name: Bucket?
+  choice2AnimName: 
+  choice2Next: {fileID: 11400000, guid: c96be2483ef8bcb42ad7c5cfe8e6dac8, type: 2}
+  choice2Sentence: Is that a bucket on your head?
+  frog: 0

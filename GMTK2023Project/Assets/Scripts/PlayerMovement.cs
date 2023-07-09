@@ -24,6 +24,4 @@ public class PlayerMovement : MonoBehaviour
         move.y = 0;
         controller.Move(move * Time.deltaTime * playerSpeed);
     }
-
-
 }

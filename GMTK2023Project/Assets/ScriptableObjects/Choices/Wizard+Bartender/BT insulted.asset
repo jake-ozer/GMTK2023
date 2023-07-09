@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af27999582f25247899fc8cafd970dc, type: 3}
+  m_Name: BT insulted
+  m_EditorClassIdentifier: 
+  choice1Name: Kick Out
+  choice1AnimName: 
+  choice1Next: {fileID: 11400000, guid: 54bd272d09fed734b9ac201726784e0f, type: 2}
+  choice1Sentence: 'Get outta my tavern now! '
+  choice2Name: Laugh Off
+  choice2AnimName: wizcastspell
+  choice2Next: {fileID: 0}
+  choice2Sentence: Haha! It could use a bit of cleaning, i agree
+  frog: 0

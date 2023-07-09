@@ -13,6 +13,7 @@ public class ChoiceManager : MonoBehaviour
     public Choice currentChoice;
     public bool makingChoice = false;
     private bool choice1Pointer;
+    private Animator partnerAnim;
 
     private void Awake()
     {
@@ -35,6 +36,8 @@ public class ChoiceManager : MonoBehaviour
 
     public void MakeChoice(bool isChoice1)
     {
+        FindObjectOfType<StateManager>().rotateCharacters = false; //this is for state manager rotation of characters
+
         choice1Pointer = isChoice1;
 
         if (isChoice1)
@@ -42,11 +45,46 @@ public class ChoiceManager : MonoBehaviour
             //play animation and do stuff
             //start dialogue
             FindObjectOfType<DialogueManager>().StartDialogue(currentChoice.choice1Sentence);
+            if (currentChoice.choice1AnimName != null)
+            {
+                //Debug.Log(FindObjectOfType<StateManager>().partnerPivot.name);
+                //Debug.Log(FindObjectOfType<StateManager>().partnerPivot.transform.childCount);
+                partnerAnim = FindObjectOfType<StateManager>().partnerPivot.transform.GetChild(0).gameObject.GetComponent<Animator>();
+                
+                if (partnerAnim != null)
+                {
+                    partnerAnim.Play(currentChoice.choice1AnimName);
+                }
+                
+            }
+
+            if (currentChoice.choice1AVal != null)
+            {
+                FindObjectOfType<AchievementManager>().AddAchievement(currentChoice.choice1AVal);
+            }
+
+            if (currentChoice.frog)
+            {
+                //do frog logic
+                GameObject.Find("Frog").GetComponent<MeshRenderer>().enabled = true;
+                GameObject.Find("Bartender").SetActive(false);
+            }
         }
         else
         {
             //play animation and do stuff
             FindObjectOfType<DialogueManager>().StartDialogue(currentChoice.choice2Sentence);
+
+            if (currentChoice.choice2AnimName != null)
+            {
+                partnerAnim = FindObjectOfType<StateManager>().partnerPivot.transform.GetChild(0).gameObject.GetComponent<Animator>();
+                partnerAnim.Play(currentChoice.choice2AnimName);
+            }
+
+            if (currentChoice.choice2AVal != null)
+            {
+                FindObjectOfType<AchievementManager>().AddAchievement(currentChoice.choice2AVal);
+            }
         }
         makingChoice = false;
     }

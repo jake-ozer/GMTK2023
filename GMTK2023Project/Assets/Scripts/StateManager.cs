@@ -11,6 +11,8 @@ public class StateManager : MonoBehaviour
     private GameObject crosshair;
     private CinemachineVirtualCamera playerCam;
     private CinemachineVirtualCamera dialogueCam;
+    public GameObject partnerPivot;
+    public bool rotateCharacters = true;
 
     private void Start()
     {
@@ -24,6 +26,9 @@ public class StateManager : MonoBehaviour
         playerCam = curPlayer.transform.GetChild(2).GetComponent<CinemachineVirtualCamera>();
         dialogueCam = curPlayer.transform.GetChild(1).GetComponent<CinemachineVirtualCamera>();
 
+        var partner = curPlayer.GetComponent<PlayerCharacter>().partner;
+        partnerPivot = partner.transform.GetChild(3).gameObject;
+
         if (currentState == State.inDialogue)
         {
             playerCam.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.m_InputAxisName = "";
@@ -33,6 +38,16 @@ public class StateManager : MonoBehaviour
             dialogueCam.Priority = 5;
             Cursor.visible = true;
             crosshair.SetActive(false);
+            curPlayer.transform.GetChild(3).gameObject.SetActive(true);
+
+            if (rotateCharacters)
+            {
+                //rotate player towards partner
+                curPlayer.transform.GetChild(3).gameObject.GetComponent<RotateWithCam>().RotateToFront();
+                //rotate partner towards player
+                partnerPivot.GetComponent<RotateWithCam>().enabled = true;
+                partnerPivot.GetComponent<RotateWithCam>().RotateToPartner();
+            }
         }
         else
         {
@@ -43,6 +58,8 @@ public class StateManager : MonoBehaviour
             dialogueCam.Priority = 0;
             Cursor.visible = false;
             crosshair.SetActive(true);
+            curPlayer.transform.GetChild(3).gameObject.SetActive(false);
+            partnerPivot.GetComponent<RotateWithCam>().enabled = false;
         }
     }
 
@@ -52,4 +69,10 @@ public class StateManager : MonoBehaviour
         playerCam.Priority = 1;
         curPlayer = curPlayer.GetComponent<PlayerCharacter>().partner.gameObject;
     }
+
+/*    private IEnumerator LockRot()
+    {
+        yield return new WaitForSeconds(1.5f);
+        
+    }*/
 }
